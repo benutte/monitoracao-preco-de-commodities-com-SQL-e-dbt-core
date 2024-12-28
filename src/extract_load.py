@@ -67,8 +67,8 @@ def salvar_dados_no_banco(dados, tabela):
         dados (pd.DataFrame): DataFrame contendo os dados a serem salvos.
         tabela (str): Nome da tabela no banco de dados onde os dados serão salvos.
     """
-    dados.to_sql(tabela, engine, schema=DB_SCHEMA, if_exists='replace', index=False)
+    dados.to_sql(tabela, engine, schema=DB_SCHEMA, if_exists='replace', index=True, index_label='Date')
 
 # Buscar dados de todas as commodities e salvar no banco de dados
 dados_commodities = buscar_todos_dados(commodities)
-salvar_dados_no_banco(dados_commodities, 'commodities_prices')
+salvar_dados_no_banco(dados_commodities, 'commodities')

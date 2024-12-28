@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: dsales
+    schema: public
+    tables:
+      - name: commodities
+        description: "Tabela que contém dados históricos de commodities"
+        columns:
+          - name: Date
+            description: "Data de referência"
+          - name: Close
+            description: "Valor de fechamento"
+          - name: simbolo
+            description: "Símbolo da commodity"
