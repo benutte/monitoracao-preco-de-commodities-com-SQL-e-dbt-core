@@ -22,13 +22,13 @@ Este projeto tem como objetivo monitorar o preço de commodities específicas, t
 📂 **Estrutura do Projeto**
 
   monitoramento_commodities/
-  ├── app.py              # Código principal para coleta e armazenamento de dados
-  ├── models/             # Modelos DBT para transformação de dados
-  ├── app.py         # Código para a interface interativa com Streamlit
-  ├── dbt_project.yml     # Configurações do projeto DBT
-  ├── requirements.txt    # Dependências do projeto
-  ├── .env                # Variáveis de ambiente (não deve ser commitado)
-  ├── README.md           # Documentação do projeto
+    ├── app.py              # Código principal para coleta e armazenamento de dados
+    ├── models/             # Modelos DBT para transformação de dados
+    ├── app.py         # Código para a interface interativa com Streamlit
+    ├── dbt_project.yml     # Configurações do projeto DBT
+    ├── requirements.txt    # Dependências do projeto
+    ├── .env                # Variáveis de ambiente (não deve ser commitado)
+    ├── README.md           # Documentação do projeto
 
 🛡️ **Aviso Legal**
 
