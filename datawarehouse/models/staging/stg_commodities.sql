@@ -1,18 +1,19 @@
-WITH source AS (
-    SELECT
+
+with source as (
+    select
         "Date",
         "Close",
-        simbolo
-    FROM {{ source('dsales', 'commodities') }}
+        "simbolo"
+    from 
+        {{ source('dsales', 'commodities') }} 
 ),
 
-renamed AS (
-    SELECT
-        CAST("Date" AS date) AS data,
-        "Close" AS valor_fechamento,
-        simbolo        
-    FROM source
+renamed as (
+    select
+        cast("Date" as date) as data,
+        "Close" as valor_fechamento,
+        simbolo
+    from source
 )
 
-SELECT *
-FROM renamed
+select * from renamed
